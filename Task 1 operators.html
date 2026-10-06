@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Operators</title>
+</head>
+<body>
+    <h1>JavaScript Operators</h1>
+    <h2>1. Arithmetic Operators</h2>
+    <p id="arithmetic"></p>
+    <h2>2. Relational Operators</h2>
+    <p id="relational"></p>
+    <h2>3. Logical Operators</h2>
+    <p id="logical"></p>
+    <h2>4. Assignment Operators</h2>
+    <p id="assignment"></p>
+    <h2>5. Bitwise Operators</h2>
+    <p id="bitwise"></p>
+    <h2>6. Unary Operators</h2>
+    <p id="unary"></p
+    <h2>7. Ternary Operator</h2>
+    <p id="ternary"></p>
+    <script>
+        let a = 20;
+        let b = 10;
+        // 1. Arithmetic Operators
+        document.getElementById("arithmetic").innerHTML =
+            "Addition (+): " + (a + b) + "<br>" +
+            "Subtraction (-): " + (a - b) + "<br>" +
+            "Multiplication (*): " + (a * b) + "<br>" +
+            "Division (/): " + (a / b) + "<br>" +
+            "Modulus (%): " + (a % b);
+        // 2. Relational Operators
+        document.getElementById("relational").innerHTML =
+            "a > b : " + (a > b) + "<br>" +
+            "a < b : " + (a < b) + "<br>" +
+            "a >= b : " + (a >= b) + "<br>" +
+            "a <= b : " + (a <= b) + "<br>" +
+            "a == b : " + (a == b) + "<br>" +
+            "a != b : " + (a != b) + "<br>" +
+            "a === b : " + (a === b);
+        // 3. Logical Operators
+        let x = true;
+        let y = false;
+        document.getElementById("logical").innerHTML =
+            "x && y : " + (x && y) + "<br>" +
+            "x || y : " + (x || y) + "<br>" +
+            "!x : " + (!x);
+        // 4. Assignment Operators
+        let num = 10;
+        num += 5;
+        let add = num;
+        num -= 3;
+        let subtract = num;
+        num *= 2;
+        let multiply = num;
+        num /= 4;
+        let divide = num;
+        document.getElementById("assignment").innerHTML =
+            "num += 5 : " + add + "<br>" +
+            "num -= 3 : " + subtract + "<br>" +
+            "num *= 2 : " + multiply + "<br>" +
+            "num /= 4 : " + divide;
+        // 5. Bitwise Operators
+        let p = 5;
+        let q = 3;
+        document.getElementById("bitwise").innerHTML =
+            "p & q : " + (p & q) + "<br>" +
+            "p | q : " + (p | q) + "<br>" +
+            "p ^ q : " + (p ^ q) + "<br>" +
+            "~p : " + (~p) + "<br>" +
+            "p << 1 : " + (p << 1) + "<br>" +
+            "p >> 1 : " + (p >> 1);
+        // 6. Unary Operators
+        let n = 5;
+        let increment = ++n;
+        let decrement = --n;
+        document.getElementById("unary").innerHTML =
+            "++n : " + increment + "<br>" +
+            "--n : " + decrement + "<br>" +
+            "typeof n : " + typeof n;
+        // 7. Ternary Operator
+        let marks = 75;
+        let result = marks >= 40 ? "Pass" : "Fail";
+        document.getElementById("ternary").innerHTML =
+            "Marks: " + marks + "<br>" +
+            "Result: " + result;
+    </script>
+</body>
+</html>
